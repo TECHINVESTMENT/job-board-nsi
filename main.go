@@ -1,16 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"net/http"
-	_ "net/http/pprof"
-	"strings"
 	"embed"
-
-	"github.com/gorilla/mux"
-	"github.com/gorilla/sessions"
-
+	"fmt"
 	"github.com/golang-cafe/job-board/internal/blog"
 	"github.com/golang-cafe/job-board/internal/bookmark"
 	"github.com/golang-cafe/job-board/internal/company"
@@ -25,6 +17,12 @@ import (
 	"github.com/golang-cafe/job-board/internal/server"
 	"github.com/golang-cafe/job-board/internal/template"
 	"github.com/golang-cafe/job-board/internal/user"
+	"github.com/gorilla/mux"
+	"github.com/gorilla/sessions"
+	"log"
+	"net/http"
+	_ "net/http/pprof"
+	"strings"
 )
 
 //go:embed static/*
